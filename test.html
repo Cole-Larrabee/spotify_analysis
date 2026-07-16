@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Test Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            background: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 16px;
+            border: none;
+            background: #0078d4;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #005fa3;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        input {
+            padding: 8px;
+            width: 250px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>HTML Test Page</h1>
+        <p>This page is intended for HTML, CSS, and JavaScript testing.</p>
+
+        <button onclick="showMessage()">Click Me</button>
+        <p id="message"></p>
+    </div>
+
+    <div class="card">
+        <h2>Sample Form</h2>
+
+        <form>
+            <label for="name">Name:</label><br>
+            <input id="name" type="text" placeholder="Enter your name">
+            <button type="button">Submit</button>
+        </form>
+    </div>
+
+    <div class="card">
+        <h2>Sample Table</h2>
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Alice</td>
+                <td>Developer</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>Designer</td>
+                <td>Offline</td>
+            </tr>
+            <tr>
+                <td>Charlie</td>
+                <td>QA Engineer</td>
+                <td>Active</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>Sample List</h2>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").textContent =
+                "Button clicked at " + new Date().toLocaleTimeString();
+        }
+    </script>
+
+</body>
+</html>
